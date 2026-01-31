@@ -1,0 +1,13 @@
+# Go
+/bin/
+/*.exe
+*.out
+
+# FFmpeg outputs
+*.raw
+*.mp4
+*.mkv
+
+# OS junk
+.DS_Store
+Thumbs.db
