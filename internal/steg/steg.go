@@ -1,5 +1,11 @@
 package steg
 
+func EmbedBitsInStream(buf []byte) {
+	for i := 0; i < len(buf); i++ {
+		buf[i] = buf[i] & 0xFE
+	}
+}
+
 // HideBit hides a single bit (0 or 1) inside a byte
 func HideBit(pixelByte byte, bit byte) byte {
 	pixelByte = pixelByte & 0xFE
